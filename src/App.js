@@ -7,7 +7,7 @@ function App() {
 
     const getWeather = () => {
         if (location) {
-            fetch(`http://localhost:5000/weather?location=${location}`)
+            fetch(`https://weatherapp-backend-5.onrender.com/weather?location=${location}`)
                 .then(res => res.json())
                 .then(data => {
                     setWeather(data);
